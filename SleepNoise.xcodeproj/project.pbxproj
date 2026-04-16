@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B39BD4733F3D0FA427BBEFC /* GridEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7180B221FF91E09F72C0713D /* GridEngine.swift */; };
+		3F209D79B6739E1E8E4F9F1A /* SleepNoiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE63C32AD3074A471BCEDBB /* SleepNoiseApp.swift */; };
+		6E778B509CE9D68FD1A46F80 /* NoiseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E65C74EC50CB2B10F17FF8E /* NoiseGenerator.swift */; };
+		98CDC60175FB74FED264A662 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9C87A0222D2344174AB365 /* GridView.swift */; };
+		C3C20414E127DFB27C82D86F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11741EFB1BEF46EF6F4059DC /* LaunchScreen.storyboard */; };
+		F949CE9DB6613CC738B91FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB6D54371C0C41E094C334B6 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C5F0F59971944DA6279E0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0E65C74EC50CB2B10F17FF8E /* NoiseGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseGenerator.swift; sourceTree = "<group>"; };
+		11741EFB1BEF46EF6F4059DC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D9C87A0222D2344174AB365 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		7180B221FF91E09F72C0713D /* GridEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridEngine.swift; sourceTree = "<group>"; };
+		AB6D54371C0C41E094C334B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCD787FDB3E6B33D05E3CA15 /* SleepNoise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepNoise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE63C32AD3074A471BCEDBB /* SleepNoiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepNoiseApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		4259C21372095360E4B14A18 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				7180B221FF91E09F72C0713D /* GridEngine.swift */,
+				0E65C74EC50CB2B10F17FF8E /* NoiseGenerator.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		78080C7DFA619D81C7A93E8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD787FDB3E6B33D05E3CA15 /* SleepNoise.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A741AF9DDFA89F6DAE754EC /* SleepNoise */ = {
+			isa = PBXGroup;
+			children = (
+				AB6D54371C0C41E094C334B6 /* Assets.xcassets */,
+				0C5F0F59971944DA6279E0DB /* Info.plist */,
+				11741EFB1BEF46EF6F4059DC /* LaunchScreen.storyboard */,
+				FBE63C32AD3074A471BCEDBB /* SleepNoiseApp.swift */,
+				4259C21372095360E4B14A18 /* Audio */,
+				EE235F8A7B8EB2D8EC1458F2 /* Views */,
+			);
+			path = SleepNoise;
+			sourceTree = "<group>";
+		};
+		E66DAA0593C59879E4C2311A = {
+			isa = PBXGroup;
+			children = (
+				9A741AF9DDFA89F6DAE754EC /* SleepNoise */,
+				78080C7DFA619D81C7A93E8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE235F8A7B8EB2D8EC1458F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2D9C87A0222D2344174AB365 /* GridView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB393C758B6554D316B458D8 /* SleepNoise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66B4E2D71F48789D1618BB71 /* Build configuration list for PBXNativeTarget "SleepNoise" */;
+			buildPhases = (
+				1DB0566ADF83A56472E6F3CD /* Sources */,
+				8B976940ECF5FA93B0FC426A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SleepNoise;
+			packageProductDependencies = (
+			);
+			productName = SleepNoise;
+			productReference = DCD787FDB3E6B33D05E3CA15 /* SleepNoise.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		648B9766A3C44FCE42592BB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = C21ED4901CF875EB261811F4 /* Build configuration list for PBXProject "SleepNoise" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E66DAA0593C59879E4C2311A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 78080C7DFA619D81C7A93E8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB393C758B6554D316B458D8 /* SleepNoise */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B976940ECF5FA93B0FC426A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F949CE9DB6613CC738B91FF2 /* Assets.xcassets in Resources */,
+				C3C20414E127DFB27C82D86F /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DB0566ADF83A56472E6F3CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B39BD4733F3D0FA427BBEFC /* GridEngine.swift in Sources */,
+				98CDC60175FB74FED264A662 /* GridView.swift in Sources */,
+				6E778B509CE9D68FD1A46F80 /* NoiseGenerator.swift in Sources */,
+				3F209D79B6739E1E8E4F9F1A /* SleepNoiseApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		119157B2B9572A73B8FA3789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8Y953S59SF;
+				INFOPLIST_FILE = SleepNoise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sleepnoise.SleepNoise;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		301EE1FF2CA91096F49E3729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A93A39466CD6943DBBB99668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8Y953S59SF;
+				INFOPLIST_FILE = SleepNoise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sleepnoise.SleepNoise;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F67F25A4934AD1DC572F75B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66B4E2D71F48789D1618BB71 /* Build configuration list for PBXNativeTarget "SleepNoise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A93A39466CD6943DBBB99668 /* Debug */,
+				119157B2B9572A73B8FA3789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C21ED4901CF875EB261811F4 /* Build configuration list for PBXProject "SleepNoise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F67F25A4934AD1DC572F75B9 /* Debug */,
+				301EE1FF2CA91096F49E3729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 648B9766A3C44FCE42592BB5 /* Project object */;
+}

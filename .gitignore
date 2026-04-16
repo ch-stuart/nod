@@ -1,0 +1,9 @@
+# Logs
+logs
+*.log
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+
+poc
+research
