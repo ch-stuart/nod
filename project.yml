@@ -1,6 +1,6 @@
 name: SleepNoise
 options:
-  bundleIdPrefix: com.ch-stuart.sleepnoise 
+  bundleIdPrefix: com.waveringlight
   deploymentTarget:
     iOS: "17.0"
 targets:
