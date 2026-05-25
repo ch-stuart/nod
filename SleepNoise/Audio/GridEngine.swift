@@ -15,12 +15,12 @@ final class GridEngine {
     //                          ├→ sumMixer → hpEQ → lpEQ → mainMixer
     // (all four feed in)      ─┘
 
-    private let engine = AVAudioEngine()
-    private let mixers: [AVAudioMixerNode] = (0..<4).map { _ in AVAudioMixerNode() }
-    private let players: [AVAudioPlayerNode] = (0..<4).map { _ in AVAudioPlayerNode() }
-    private let sumMixer = AVAudioMixerNode()
-    private let hpEQ = AVAudioUnitEQ(numberOfBands: 1)
-    private let lpEQ = AVAudioUnitEQ(numberOfBands: 1)
+    private var engine = AVAudioEngine()
+    private var mixers: [AVAudioMixerNode] = (0..<4).map { _ in AVAudioMixerNode() }
+    private var players: [AVAudioPlayerNode] = (0..<4).map { _ in AVAudioPlayerNode() }
+    private var sumMixer = AVAudioMixerNode()
+    private var hpEQ = AVAudioUnitEQ(numberOfBands: 1)
+    private var lpEQ = AVAudioUnitEQ(numberOfBands: 1)
     private var isGraphSetup = false
     private var hardwareSampleRate: Double = 0
     private var cachedBuffers: [AVAudioPCMBuffer] = []
@@ -53,6 +53,7 @@ final class GridEngine {
     init() {
         loadBookmarks()
         setupRemoteCommands()
+        setupAudioSessionObservers()
     }
 
     // MARK: - Toggle (debounced, for tap gestures)
@@ -172,6 +173,7 @@ final class GridEngine {
         displayLink = nil
         players.forEach { $0.stop() }
         engine.stop()
+        try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
         dwellStart = nil
         dwellPosition = nil
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
@@ -233,6 +235,65 @@ final class GridEngine {
            Date().timeIntervalSince(start) >= dwellDuration {
             addBookmark(pos)
             dwellStart = nil  // won't trigger again until they move and return
+        }
+    }
+
+    // MARK: - Audio session observers
+
+    private func setupAudioSessionObservers() {
+        let session = AVAudioSession.sharedInstance()
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleInterruption(_:)),
+            name: AVAudioSession.interruptionNotification,
+            object: session
+        )
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleMediaServicesReset),
+            name: AVAudioSession.mediaServicesWereResetNotification,
+            object: session
+        )
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleRouteChange(_:)),
+            name: AVAudioSession.routeChangeNotification,
+            object: session
+        )
+    }
+
+    @objc private func handleInterruption(_ notification: Notification) {
+        guard let typeValue = notification.userInfo?[AVAudioSessionInterruptionTypeKey] as? UInt,
+              let type = AVAudioSession.InterruptionType(rawValue: typeValue) else { return }
+        if type == .ended {
+            let optionBits = notification.userInfo?[AVAudioSessionInterruptionOptionKey] as? UInt ?? 0
+            if AVAudioSession.InterruptionOptions(rawValue: optionBits).contains(.shouldResume), isRunning {
+                startAudio()
+            }
+        }
+    }
+
+    @objc private func handleMediaServicesReset() {
+        // All audio objects are invalid after a media services reset — rebuild from scratch
+        displayLink?.invalidate()
+        displayLink = nil
+        engine = AVAudioEngine()
+        players = (0..<4).map { _ in AVAudioPlayerNode() }
+        mixers = (0..<4).map { _ in AVAudioMixerNode() }
+        sumMixer = AVAudioMixerNode()
+        hpEQ = AVAudioUnitEQ(numberOfBands: 1)
+        lpEQ = AVAudioUnitEQ(numberOfBands: 1)
+        isGraphSetup = false
+        if isRunning {
+            startAudio()
+        }
+    }
+
+    @objc private func handleRouteChange(_ notification: Notification) {
+        guard let reasonValue = notification.userInfo?[AVAudioSessionRouteChangeReasonKey] as? UInt,
+              let reason = AVAudioSession.RouteChangeReason(rawValue: reasonValue) else { return }
+        if reason == .oldDeviceUnavailable, isRunning {
+            startAudio()
         }
     }
 
