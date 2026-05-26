@@ -10,7 +10,7 @@ The grid provides a continuous range of noise. The user drags a dot to find a so
 
 ## Bookmarks
 
-Bookmarks are automatic — they record a position the user has genuinely settled on, not a deliberate "save" action. In production, a bookmark is created after 15 minutes of playing at a position (`dwellDuration = 900`). The current value of 10 seconds is for development/testing only.
+Bookmarks are automatic — they record a position the user has genuinely settled on, not a deliberate "save" action. In production, a bookmark is created after 15 minutes of playing at a position (`dwellDuration = 900`).
 
 Bookmark UX intent:
 

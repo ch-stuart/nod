@@ -19,6 +19,8 @@ struct GridView: View {
                         .foregroundStyle(.white.opacity(0.25))
                         .position(dotCenter(for: engine.bookmarks[i], in: geo.size))
                         .allowsHitTesting(false)
+                        .accessibilityLabel("Saved position, \(positionDescription(engine.bookmarks[i]))")
+                        .accessibilityAddTraits(.isStaticText)
                 }
 
                 Circle()
@@ -33,10 +35,21 @@ struct GridView: View {
                                 updateDotPosition(for: value.location, in: geo.size)
                             }
                     )
+                    .accessibilityLabel("Noise")
+                    .accessibilityValue(positionDescription(dotPosition))
+                    .accessibilityHint(engine.isRunning ? "Double-tap to stop" : "Double-tap to start")
+                    .accessibilityAddTraits(.isButton)
+                    .accessibilityAction(named: "Brighter") { nudgeDot(dx: 0,     dy: -0.05) }
+                    .accessibilityAction(named: "Darker")   { nudgeDot(dx: 0,     dy:  0.05) }
+                    .accessibilityAction(named: "Airier")   { nudgeDot(dx: -0.05, dy: 0)     }
+                    .accessibilityAction(named: "Deeper")   { nudgeDot(dx:  0.05, dy: 0)     }
             }
             .contentShape(Rectangle())
             .onTapGesture(coordinateSpace: .local) { location in
                 handleTap(at: location, in: geo.size)
+            }
+            .onChange(of: engine.isRunning) { _, running in
+                UIAccessibility.post(notification: .announcement, argument: running ? "Playing" : "Stopped")
             }
             .onAppear {
                 engine.bookmarkProximity = Double(dotDiameter / 2) / Double(geo.size.width)
@@ -46,7 +59,7 @@ struct GridView: View {
             }
         }
         .background {
-            backgroundView.ignoresSafeArea()
+            backgroundView.ignoresSafeArea().accessibilityHidden(true)
         }
     }
 
@@ -125,6 +138,32 @@ struct GridView: View {
         UserDefaults.standard.set(["x": point.x, "y": point.y], forKey: positionKey)
     }
 
+    private func nudgeDot(dx: Double, dy: Double) {
+        let newPos = CGPoint(
+            x: (dotPosition.x + dx).clamped(to: 0...1),
+            y: (dotPosition.y + dy).clamped(to: 0...1)
+        )
+        dotPosition = newPos
+        GridView.savePosition(newPos)
+        engine.setPosition(x: Float(newPos.x), y: Float(newPos.y))
+    }
+
+    private func positionDescription(_ pos: CGPoint) -> String {
+        let brightness: String
+        switch pos.y {
+        case ..<0.33: brightness = "bright"
+        case ..<0.66: brightness = "mid"
+        default:      brightness = "dark"
+        }
+        let tone: String
+        switch pos.x {
+        case ..<0.33: tone = "airy"
+        case ..<0.66: tone = "balanced"
+        default:      tone = "full"
+        }
+        return "\(brightness), \(tone)"
+    }
+
     private func dotCenter(for position: CGPoint, in size: CGSize) -> CGPoint {
         let inset = dotDiameter / 2 + dotEdgeGutter
         let usableWidth = max(size.width - inset * 2, 0)
@@ -138,6 +177,12 @@ struct GridView: View {
 
 private extension Float {
     func clamped(to range: ClosedRange<Float>) -> Float {
+        min(max(self, range.lowerBound), range.upperBound)
+    }
+}
+
+private extension Double {
+    func clamped(to range: ClosedRange<Double>) -> Double {
         min(max(self, range.lowerBound), range.upperBound)
     }
 }

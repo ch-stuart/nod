@@ -44,7 +44,7 @@ final class GridEngine {
     private var dwellPosition: CGPoint? = nil
     private var dwellStart: Date? = nil
     private let dwellDistance: Double = 0.04
-    private let dwellDuration: TimeInterval = 10
+    private let dwellDuration: TimeInterval = 900
     var bookmarkProximity: Double = 0.05
     private let maxBookmarks = 5
 
