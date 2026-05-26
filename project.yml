@@ -1,4 +1,4 @@
-name: SleepNoise
+name: Nod
 options:
   bundleIdPrefix: com.waveringlightllc
   deploymentTarget:
