@@ -1,6 +1,6 @@
 name: SleepNoise
 options:
-  bundleIdPrefix: com.waveringlight
+  bundleIdPrefix: com.waveringlightllc
   deploymentTarget:
     iOS: "17.0"
 targets:
