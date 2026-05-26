@@ -113,6 +113,8 @@ final class GridEngine {
         engine.mainMixerNode.outputVolume = 0
         startupFadeFrames = 0
 
+        players.forEach { $0.stop() }
+
         if cachedBuffers.isEmpty {
             let rate = hardwareSampleRate
             Task.detached(priority: .userInitiated) {
@@ -208,6 +210,7 @@ final class GridEngine {
     // MARK: - Display link (smooth parameter changes at ~60fps)
 
     private func startDisplayLink() {
+        displayLink?.invalidate()
         displayLink = CADisplayLink(target: self, selector: #selector(tick))
         displayLink?.add(to: .main, forMode: .common)
     }
