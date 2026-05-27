@@ -7,160 +7,159 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B39BD4733F3D0FA427BBEFC /* GridEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7180B221FF91E09F72C0713D /* GridEngine.swift */; };
-		3F209D79B6739E1E8E4F9F1A /* SleepNoiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE63C32AD3074A471BCEDBB /* SleepNoiseApp.swift */; };
-		6E778B509CE9D68FD1A46F80 /* NoiseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E65C74EC50CB2B10F17FF8E /* NoiseGenerator.swift */; };
-		98CDC60175FB74FED264A662 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9C87A0222D2344174AB365 /* GridView.swift */; };
-		C3C20414E127DFB27C82D86F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11741EFB1BEF46EF6F4059DC /* LaunchScreen.storyboard */; };
-		EE44B22A2FC50AC0007F5AE7 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = EE44B2292FC50AC0007F5AE7 /* PrivacyInfo.xcprivacy */; };
-		F949CE9DB6613CC738B91FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB6D54371C0C41E094C334B6 /* Assets.xcassets */; };
+		0F1AF0FC46E0A5A8559E9604 /* SleepNoiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9679FBCCA3A800DE6902342C /* SleepNoiseApp.swift */; };
+		351090B8F1471CEF8C192EA2 /* GridEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AC68B42EF48750AEF2761F /* GridEngine.swift */; };
+		438C5FD1206D4306B7BB9A17 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B7EED86E2BFDE355448221 /* GridView.swift */; };
+		47BF5E75A39777599887DF3E /* NoiseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9199D188F6202C608A68D42E /* NoiseGenerator.swift */; };
+		8319E2C0CFB86309C4B2EFB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8108E8CFEA0ACC15992D1E8C /* LaunchScreen.storyboard */; };
+		95557EC05984BC2C5BB5528F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59AE059B3896A389BE0C3F21 /* Assets.xcassets */; };
+		B932C9DA89C6B74E08B6E6BE /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = EBBAACFEE6834D11F8A87E11 /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C5F0F59971944DA6279E0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		0E65C74EC50CB2B10F17FF8E /* NoiseGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseGenerator.swift; sourceTree = "<group>"; };
-		11741EFB1BEF46EF6F4059DC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2D9C87A0222D2344174AB365 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
-		7180B221FF91E09F72C0713D /* GridEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridEngine.swift; sourceTree = "<group>"; };
-		AB6D54371C0C41E094C334B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DCD787FDB3E6B33D05E3CA15 /* SleepNoise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepNoise.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE44B2292FC50AC0007F5AE7 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		FBE63C32AD3074A471BCEDBB /* SleepNoiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepNoiseApp.swift; sourceTree = "<group>"; };
+		16AC68B42EF48750AEF2761F /* GridEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridEngine.swift; sourceTree = "<group>"; };
+		20B7EED86E2BFDE355448221 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		4940AE0F466E23E8BD4994BD /* Nod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nod.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59AE059B3896A389BE0C3F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8108E8CFEA0ACC15992D1E8C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9199D188F6202C608A68D42E /* NoiseGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseGenerator.swift; sourceTree = "<group>"; };
+		9679FBCCA3A800DE6902342C /* SleepNoiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepNoiseApp.swift; sourceTree = "<group>"; };
+		E81E81B678DD169C5837058B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EBBAACFEE6834D11F8A87E11 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		4259C21372095360E4B14A18 /* Audio */ = {
+		84359F757DDBC745C733240B = {
 			isa = PBXGroup;
 			children = (
-				7180B221FF91E09F72C0713D /* GridEngine.swift */,
-				0E65C74EC50CB2B10F17FF8E /* NoiseGenerator.swift */,
+				F9E519D57340EF30CE539098 /* SleepNoise */,
+				DEFF421EAA78615B580C1942 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C176830FC04827010FEC80E3 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				16AC68B42EF48750AEF2761F /* GridEngine.swift */,
+				9199D188F6202C608A68D42E /* NoiseGenerator.swift */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
 		};
-		78080C7DFA619D81C7A93E8A /* Products */ = {
+		DEED19CF097216B23567DBCA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DCD787FDB3E6B33D05E3CA15 /* SleepNoise.app */,
+				20B7EED86E2BFDE355448221 /* GridView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEFF421EAA78615B580C1942 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4940AE0F466E23E8BD4994BD /* Nod.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9A741AF9DDFA89F6DAE754EC /* SleepNoise */ = {
+		F9E519D57340EF30CE539098 /* SleepNoise */ = {
 			isa = PBXGroup;
 			children = (
-				EE44B2292FC50AC0007F5AE7 /* PrivacyInfo.xcprivacy */,
-				AB6D54371C0C41E094C334B6 /* Assets.xcassets */,
-				0C5F0F59971944DA6279E0DB /* Info.plist */,
-				11741EFB1BEF46EF6F4059DC /* LaunchScreen.storyboard */,
-				FBE63C32AD3074A471BCEDBB /* SleepNoiseApp.swift */,
-				4259C21372095360E4B14A18 /* Audio */,
-				EE235F8A7B8EB2D8EC1458F2 /* Views */,
+				59AE059B3896A389BE0C3F21 /* Assets.xcassets */,
+				E81E81B678DD169C5837058B /* Info.plist */,
+				8108E8CFEA0ACC15992D1E8C /* LaunchScreen.storyboard */,
+				EBBAACFEE6834D11F8A87E11 /* PrivacyInfo.xcprivacy */,
+				9679FBCCA3A800DE6902342C /* SleepNoiseApp.swift */,
+				C176830FC04827010FEC80E3 /* Audio */,
+				DEED19CF097216B23567DBCA /* Views */,
 			);
 			path = SleepNoise;
-			sourceTree = "<group>";
-		};
-		E66DAA0593C59879E4C2311A = {
-			isa = PBXGroup;
-			children = (
-				9A741AF9DDFA89F6DAE754EC /* SleepNoise */,
-				78080C7DFA619D81C7A93E8A /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		EE235F8A7B8EB2D8EC1458F2 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				2D9C87A0222D2344174AB365 /* GridView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BB393C758B6554D316B458D8 /* SleepNoise */ = {
+		2D1D6B35D4D49DA553072A14 /* Nod */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66B4E2D71F48789D1618BB71 /* Build configuration list for PBXNativeTarget "SleepNoise" */;
+			buildConfigurationList = FC60EBF79D4B761A1027E0B3 /* Build configuration list for PBXNativeTarget "Nod" */;
 			buildPhases = (
-				1DB0566ADF83A56472E6F3CD /* Sources */,
-				8B976940ECF5FA93B0FC426A /* Resources */,
+				FDFF5A63D590AF4AE52380C1 /* Sources */,
+				6C8A778669B440CB7E785C72 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SleepNoise;
+			name = Nod;
 			packageProductDependencies = (
 			);
-			productName = SleepNoise;
-			productReference = DCD787FDB3E6B33D05E3CA15 /* SleepNoise.app */;
+			productName = Nod;
+			productReference = 4940AE0F466E23E8BD4994BD /* Nod.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		648B9766A3C44FCE42592BB5 /* Project object */ = {
+		8A39E54C66475CC01D3A6543 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 			};
-			buildConfigurationList = C21ED4901CF875EB261811F4 /* Build configuration list for PBXProject "SleepNoise" */;
+			buildConfigurationList = 5339C7313C99F946615D3594 /* Build configuration list for PBXProject "Nod" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
 				en,
 			);
-			mainGroup = E66DAA0593C59879E4C2311A;
+			mainGroup = 84359F757DDBC745C733240B;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 78080C7DFA619D81C7A93E8A /* Products */;
+			productRefGroup = DEFF421EAA78615B580C1942 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB393C758B6554D316B458D8 /* SleepNoise */,
+				2D1D6B35D4D49DA553072A14 /* Nod */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8B976940ECF5FA93B0FC426A /* Resources */ = {
+		6C8A778669B440CB7E785C72 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE44B22A2FC50AC0007F5AE7 /* PrivacyInfo.xcprivacy in Resources */,
-				F949CE9DB6613CC738B91FF2 /* Assets.xcassets in Resources */,
-				C3C20414E127DFB27C82D86F /* LaunchScreen.storyboard in Resources */,
+				95557EC05984BC2C5BB5528F /* Assets.xcassets in Resources */,
+				8319E2C0CFB86309C4B2EFB0 /* LaunchScreen.storyboard in Resources */,
+				B932C9DA89C6B74E08B6E6BE /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1DB0566ADF83A56472E6F3CD /* Sources */ = {
+		FDFF5A63D590AF4AE52380C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B39BD4733F3D0FA427BBEFC /* GridEngine.swift in Sources */,
-				98CDC60175FB74FED264A662 /* GridView.swift in Sources */,
-				6E778B509CE9D68FD1A46F80 /* NoiseGenerator.swift in Sources */,
-				3F209D79B6739E1E8E4F9F1A /* SleepNoiseApp.swift in Sources */,
+				351090B8F1471CEF8C192EA2 /* GridEngine.swift in Sources */,
+				438C5FD1206D4306B7BB9A17 /* GridView.swift in Sources */,
+				47BF5E75A39777599887DF3E /* NoiseGenerator.swift in Sources */,
+				0F1AF0FC46E0A5A8559E9604 /* SleepNoiseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		119157B2B9572A73B8FA3789 /* Release */ = {
+		372497C21BD518D769C8DED2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = J4CBFU8375;
 				INFOPLIST_FILE = SleepNoise/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -171,7 +170,7 @@
 			};
 			name = Release;
 		};
-		301EE1FF2CA91096F49E3729 /* Release */ = {
+		962E348EDEE94E4139FACBE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,25 +226,7 @@
 			};
 			name = Release;
 		};
-		A93A39466CD6943DBBB99668 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = J4CBFU8375;
-				INFOPLIST_FILE = SleepNoise/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.waveringlightllc.nod;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		F67F25A4934AD1DC572F75B9 /* Debug */ = {
+		D070EF4F24107CDE938B2A6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -308,28 +289,45 @@
 			};
 			name = Debug;
 		};
+		E53582A6B76C5B03FF6577F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = J4CBFU8375;
+				INFOPLIST_FILE = SleepNoise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.waveringlightllc.nod;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		66B4E2D71F48789D1618BB71 /* Build configuration list for PBXNativeTarget "SleepNoise" */ = {
+		5339C7313C99F946615D3594 /* Build configuration list for PBXProject "Nod" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A93A39466CD6943DBBB99668 /* Debug */,
-				119157B2B9572A73B8FA3789 /* Release */,
+				D070EF4F24107CDE938B2A6E /* Debug */,
+				962E348EDEE94E4139FACBE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C21ED4901CF875EB261811F4 /* Build configuration list for PBXProject "SleepNoise" */ = {
+		FC60EBF79D4B761A1027E0B3 /* Build configuration list for PBXNativeTarget "Nod" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F67F25A4934AD1DC572F75B9 /* Debug */,
-				301EE1FF2CA91096F49E3729 /* Release */,
+				E53582A6B76C5B03FF6577F2 /* Debug */,
+				372497C21BD518D769C8DED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 648B9766A3C44FCE42592BB5 /* Project object */;
+	rootObject = 8A39E54C66475CC01D3A6543 /* Project object */;
 }
