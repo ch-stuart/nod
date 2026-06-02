@@ -33,4 +33,4 @@ Swift · SwiftUI · AVFoundation · iOS 17+
 
 ## Screenshot
 
-<img src="screenshots/shot.png" width="250">
+<img src="screenshots/iphone-framed.png" width="250">
