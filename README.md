@@ -4,8 +4,8 @@ A minimal iPhone/iPad sleep noise app. One view, no settings. Drag a dot to find
 
 ## Marketing
 
-- [Landing page](https://ch-stuart.github.io/nod-web/)
-- [Repository](https://github.com/ch-stuart/nod-web/)
+- [Landing page](https://www.waveringlight.com/apps/nod-sleep-noise-app/)
+- [Repository](https://github.com/ch-stuart/waveringlight.com/tree/main/src/pages/apps/nod-sleep-noise-app)
 
 ## UX
 
