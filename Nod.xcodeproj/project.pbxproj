@@ -19,13 +19,13 @@
 /* Begin PBXFileReference section */
 		16AC68B42EF48750AEF2761F /* GridEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridEngine.swift; sourceTree = "<group>"; };
 		20B7EED86E2BFDE355448221 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
-		4940AE0F466E23E8BD4994BD /* Nod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nod.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4940AE0F466E23E8BD4994BD /* Nod.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Nod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59AE059B3896A389BE0C3F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8108E8CFEA0ACC15992D1E8C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9199D188F6202C608A68D42E /* NoiseGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseGenerator.swift; sourceTree = "<group>"; };
 		9679FBCCA3A800DE6902342C /* SleepNoiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepNoiseApp.swift; sourceTree = "<group>"; };
 		E81E81B678DD169C5837058B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		EBBAACFEE6834D11F8A87E11 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		EBBAACFEE6834D11F8A87E11 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -105,6 +105,12 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2D1D6B35D4D49DA553072A14 = {
+						DevelopmentTeam = J4CBFU8375;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 5339C7313C99F946615D3594 /* Build configuration list for PBXProject "Nod" */;
 			developmentRegion = en;
@@ -158,6 +164,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J4CBFU8375;
 				INFOPLIST_FILE = SleepNoise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -294,6 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J4CBFU8375;
 				INFOPLIST_FILE = SleepNoise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
